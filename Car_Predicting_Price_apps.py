@@ -57,7 +57,7 @@ if st.session_state.page == "dashboard":
         # ---Sidebar ---
         with st.sidebar:
             st.header("🔍 Dashboard Filters")
-            st.image(r"C:\Users\hp\my_project\pexels-auto-2179220_1920.jpg")
+            st.image("pexels-auto-2179220_1920.jpg")
             
             selected_brands = st.multiselect("Select Brands", options=sorted(df_csv['Manufacturer'].unique()), default=df_csv['Manufacturer'].unique()[:5])
             selected_fuels = st.multiselect("Fuel Type", 
@@ -103,7 +103,7 @@ if st.session_state.page == "dashboard":
 elif st.session_state.page == "prediction":
     with st.sidebar:
         st.header("Car Price Prediction")
-        st.image(r"C:\Users\hp\my_project\pexels-auto-2179220_1920.jpg")
+        st.image("pexels-auto-2179220_1920.jpg")
         st.write("""
         Enter the car specifications to get an estimated market price 
         based on our trained Machine Learning model.
@@ -120,7 +120,7 @@ elif st.session_state.page == "prediction":
         st.caption("This prediction is for estimation purposes only and may vary from actual market prices.")
 
     st.title("CAR PRICE PREDICTION")
-    st.image(r"C:\Users\hp\my_project\pexels-auto-2179220_1920.jpg")
+    st.image("pexels-auto-2179220_1920.jpg")
     st.write("Enter the car details to predict its selling price")
     
     m1=['LEXUS', 'CHEVROLET', 'HONDA', 'FORD', 'HYUNDAI', 'TOYOTA', 'MERCEDES-BENZ', 'OPEL', 'PORSCHE', 'BMW', 'JEEP', 'VOLKSWAGEN', 'AUDI', 'RENAULT', 'NISSAN', 'SUBARU', 'DAEWOO', 'KIA', 'MITSUBISHI', 'SSANGYONG', 'MAZDA', 'GMC', 'FIAT', 'INFINITI', 'ALFA ROMEO', 'SUZUKI', 'ACURA', 'LINCOLN', 'VAZ', 'GAZ', 'CITROEN', 'LAND ROVER', 'MINI', 'DODGE', 'CHRYSLER', 'JAGUAR', 'ISUZU', 'SKODA', 'DAIHATSU', 'BUICK', 'TESLA', 'CADILLAC', 'PEUGEOT', 'BENTLEY', 'VOLVO', 'სხვა', 'HAVAL', 'HUMMER', 'SCION', 'UAZ', 'MERCURY', 'ZAZ', 'ROVER', 'SEAT', 'LANCIA', 'MOSKVICH', 'MASERATI', 'FERRARI', 'SAAB', 'LAMBORGHINI', 'ROLLS-ROYCE', 'PONTIAC', 'SATURN', 'ASTON MARTIN', 'GREATWALL']
