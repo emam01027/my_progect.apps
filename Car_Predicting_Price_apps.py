@@ -39,7 +39,7 @@ except:
 if st.session_state.page == "dashboard":
     st.header("📊 Car Market Data Analysis")
     
-    FILE_PATH = r"C:\Users\hp\my_project\car_price_prediction.csv" 
+    FILE_PATH = "car_price_prediction.csv" 
 
     try:
         df_csv = pd.read_csv(FILE_PATH)
