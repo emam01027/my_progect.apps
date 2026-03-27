@@ -26,7 +26,7 @@ with col2:
 # --- التحميل المسبق للموديل ---
 @st.cache_resource
 def load_model():
-    return pickle.load(open(r"C:\Users\hp\Cars_Predictions.sav", "rb"))
+    return pickle.load(open("Cars_Predictions.sav", "rb"))
 
 try:
     model_data = load_model()
@@ -65,7 +65,7 @@ if st.session_state.page == "dashboard":
                                default=['Petrol', 'Diesel']) 
             selected_gears = st.multiselect("Transmission Type", 
                                options=sorted(df_csv['Gear box type'].unique()), 
-                               default=['Automatic']) # مثال
+                               default=['Automatic'])
 
         
         df_filtered = df_csv[
