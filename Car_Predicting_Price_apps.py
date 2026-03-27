@@ -26,7 +26,7 @@ with col2:
 # --- التحميل المسبق للموديل ---
 @st.cache_resource
 def load_model():
-    return pickle.load(open("cars_predictions.sav", "rb"))
+    return pickle.load(open("Cars_Predictions.sav", "rb"))
 
 try:
     model_data = load_model()
